@@ -22,8 +22,15 @@ Batch data
 + Scheduling 
 + 2 spring batch jobs : 
     + Job1 : read CSV file - import data to Cassandra 
-    + Job2 : join between 2 CSV files - the csv files are ordered by the join column 
+    + Job2 : join between 2 CSV files - the csv files are ordered by the join column
++ Back up job : with Quazt scheduling 
 
+
+
+
+
+
+--------- 
 
 
 
