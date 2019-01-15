@@ -8,7 +8,7 @@ Batch data
 + Scheduling 
 + Database : Cassandra - PostgreSQL - MySQL 
 
-
++ ElasticSearch
 
 
 
@@ -36,4 +36,3 @@ Batch data
 
 
 
- 
