@@ -10,7 +10,9 @@ https://github.com/royabhishek93/SpringBoot_Framework---Job-Scheduling-with-Spri
 https://github.com/connect2nelson/SpringBatchTesting
 https://github.com/PhilipAp/SpringBootBatchOne
 https://github.com/niteshjha001/spring-batch
-
+https://github.com/blacktree/ScalaBatch
+https://github.com/DevKumRos/Spring-Batch
+https://github.com/gitmanjud/spring-batch-pratice
 https://github.com/rajendarreddyj/development-spring-batch-maven
 https://github.com/grove693/spring-batch-cassandra
 https://github.com/Murugar/SpringBootBatchJPA
@@ -20,11 +22,136 @@ https://github.com/mahadevshindhe/spring-batch-quartz-scheduler
 https://github.com/dilwit/spring-boot-batch
 
 https://github.com/Ishant14/SpringBatch-Demo
+https://github.com/gitNas/spring-batch-partitioner
+https://github.com/rajendarreddyj/development-spring-batch-maven
+https://github.com/chichasonu/spring-batch-multi-ds
+https://github.com/sivadurgaprasadk/spring-batch
+https://github.com/slee654/gs-batch-processing-master
+https://github.com/machihaoyu/complete
+https://github.com/skanumurilocal/csv-write-batch-processing
+https://github.com/SaumilP/spring-batch-learning
+https://github.com/carloscasalar/spring-batch-playground
+test : https://github.com/YounHyunJun/SpringBatchTestCase
+https://github.com/sssrox/SpringBatchProjects
+https://github.com/nionitron/spring-batch-intro-20150807
+https://github.com/przodownikR1/batchTrainigDay
+https://github.com/devhow-blogspot/springbatch
+https://github.com/vwardi/SpringBootBatchScheduler
+https://github.com/jbrat/BankTransactionProject
 
+https://github.com/debdayal/pro-spring-batch
+https://github.com/przodownikR1/batchTrainigDay
+
+https://github.com/thorodegaard/springbatch
+https://github.com/Murugar/Spring5Boot2BatchIntegrationSample
+https://github.com/slee654/gs-batch-processing-master/tree/master/gs-batch-processing-master
+https://github.com/jwiradin/batchmultithread
+https://github.com/hemonth/springbatch
+https://github.com/mrinmoy1000/osp_batch
+https://github.com/GauravZope/CoderTechnologiesProj
+https://github.com/gitbh/patient-batch-loader-start-2
+https://github.com/gitNas/spring-batch-partitioner
+https://github.com/sandor-nemeth/bam
+https://github.com/sivadurgaprasadk/spring-batch
+https://github.com/keyur2714/spring_new_batch
+https://github.com/RicardoLR/spring4-batch3-quartz-scheduler-joda
+https://github.com/OhadR/spring-batch-dynamic-composite-test
+https://github.com/Deven2690/SpringBatch
+https://github.com/shamim0754/SpringBatch
+https://github.com/shamim0754/SpringBatch
+https://github.com/bhaskar59/SpringBatch
+https://github.com/aniketrb-github/spring_batch
+https://github.com/NEOZOfrank/javaBatchPrototype
+https://github.com/hivp/MultiThreadBatch_SpringBatch_Example
+https://github.com/JohnnySixStrings/SpringBatch
+https://github.com/ardeneric/SpringBatch
+https://github.com/pinakim11/springBatch
+https://github.com/dhilipk/SpringBatchJob
+https://github.com/samtiku/SpringBatch
+https://github.com/jagathkriish/SpringBatchFileWriters
+https://github.com/Murugar/SpringHadoopBatchImport
+https://github.com/przodownikR1/springBatchBootSimple
+https://github.com/Gitabdelhamid/batchUsingQuartz
+https://github.com/bhagavan/SpringBatch
+https://github.com/Murugar/SpringBootBatchQuartz
+https://github.com/siddarth105/SpringBatchExample
+https://github.com/K2Prasanna/SpringBatch
+https://github.com/xmlking/grails-batch-rest
+https://github.com/eldeni/datacraft
+https://github.com/dmashok/bulkloadonPredix
+https://github.com/rohitzOrg/patient-batch-loader
+https://github.com/wlanboy/SimpleBatch
+https://github.com/klboke/partitionjob
+https://github.com/dsyer/spring-batch-gemfire
+
+https://github.com/leandrolions/batchscheduleTest
+https://github.com/VivekRajyaguru/SpringBoot_BatchProcessing
+https://github.com/Yorso/spring9_batchJobs
+https://github.com/joantolos/batch
+https://github.com/heroinedor/biblio-batch
+https://github.com/rashjz/spring-batch-cvs2db
+https://github.com/fjcarretero/spring-batch-jms-generic-slave
+https://github.com/altfatterz/spring-batch-with-jms
+https://github.com/spring-guides/deprecated-gs-yarn-batch-processing
+https://github.com/AbhijeetPhilips/Spring-Boot-Batch-Sample
+https://github.com/dpitt/spring-batch-report-writer
+https://github.com/pranav-patil/spring-mvc
+https://github.com/claboran/priceimporter
+https://github.com/phjardas/spring-batch-tools
+https://github.com/IkbelBenAbdessamad/SpringData_Batch_Elasticsearch_Kibana
+https://github.com/skilledmonster/DataTransporter
+https://github.com/isopropylcyanide/SpringBatch-KafkaDB
+https://github.com/riteshmahato/SpringBatch--MultiThreaded
+https://github.com/sastafford/spring-batch-cookbook
+https://github.com/kishanjavatrainer/SpringBootBatchTasklet
+https://github.com/brianwsears/read-input-file-write-output-file
+https://github.com/vzickner/elasticsearch-spring-batch-importer
+cassandra >  https://github.com/mohdnadeemakhtar/Spring-Batch-with-Cassandra
+https://github.com/create1st/spring-batch
+https://github.com/willschipp/spring-batch-cluster
+https://github.com/elfrucool/spring-batch-workshop
+https://github.com/abnair2016/spring-camel
+https://github.com/christian-posta/batch-systems-examples
+https://github.com/Bato/Spring-Batch-Multiple-Datasource
+https://github.com/C24-Technologies/c24-demo-springone-2015
+https://github.com/tolitius/gridy-batch
+https://github.com/newnewcoder/spring-batch-mssql-bulkcopy
+https://github.com/Bahmni/bahmni-endtb-batch
+https://github.com/EBIvariation/eva-pipeline
+https://github.com/tuxdevelop/spring-batch-lightmin-samples
+https://github.com/ldauvilaire/sample-spring-boot-batch
+https://github.com/CogStack/CogStack-Pipeline
 
 https://github.com/ChandanBharadwaj/cb-spring-batch
 
+https://github.com/lks21c/spring-boot-sample-batch-with-apns-gcm
+https://github.com/theflofly/spring-batch-elasticsearch
+https://github.com/bobah/spring-batch-crippling
+https://github.com/przodownikR1/springBatchJmsKata
+https://github.com/RawSanj/SpringRestBatch
+https://github.com/wbotelhos/spring-batch-database-flat-file
+https://github.com/wbotelhos/spring-batch-flat-file-database
+https://github.com/chenglinjava68/SpringBatch-DataMigration
+https://github.com/lvyong1985/spring-batch-showcase
+https://github.com/sedkijdaida/spring-batch-quartz
 
+https://github.com/Apress/def-guide-spring-batch
+https://github.com/ggggr/spring-batch-poc
+https://github.com/wbotelhos/spring-batch-fixed-length-token
+
+https://github.com/grove693/spring-batch-cassandra
+
+
+https://github.com/rjrudin/ml-migration-starter
+https://github.com/walkingtechie/spring-batch-csv-to-mysql
+
+
+
+https://github.com/spring-guides/deprecated-gs-yarn-batch-restart
+https://github.com/pauldeng/aws-elastic-beanstalk-worker-spring-boot-spring-batch-template
+
+https://github.com/eddiejaoude/db2es
+https://github.com/scizeron/batch-poc
 
 Book: 
 
@@ -41,4 +168,3 @@ https://github.com/vishu-guntupalli/spring-batch-starter
 
 --------
 
-tat nhien tao deo ranh - hot go lang lap trinh day - nhieu thang ghien con be nay lam 

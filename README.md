@@ -16,7 +16,7 @@ Batch data
 
 ## Feature 
 + Read - Process - Write data in batches 
-+ Transform and save CSV data file 
++ Transform and save CSV data file - and write to MySQL database 
 + Transaction 
 + Write file XML config 
 + Scheduling 
@@ -36,5 +36,4 @@ Batch data
 
 
 
-
-
+ 
