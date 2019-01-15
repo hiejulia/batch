@@ -13,7 +13,6 @@ https://github.com/SaumilP/spring-batch-learning
 https://github.com/carloscasalar/spring-batch-playground
 test : https://github.com/YounHyunJun/SpringBatchTestCase
 https://github.com/sssrox/SpringBatchProjects
-https://github.com/nionitron/spring-batch-intro-20150807
 https://github.com/vwardi/SpringBootBatchScheduler
 https://github.com/jbrat/BankTransactionProject
 https://github.com/Murugar/Spring5Boot2BatchIntegrationSample
