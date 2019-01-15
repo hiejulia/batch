@@ -17,8 +17,6 @@ https://github.com/vwardi/SpringBootBatchScheduler
 https://github.com/jbrat/BankTransactionProject
 https://github.com/Murugar/Spring5Boot2BatchIntegrationSample
 https://github.com/slee654/gs-batch-processing-master/tree/master/gs-batch-processing-master
-https://github.com/jwiradin/batchmultithread
-https://github.com/hemonth/springbatch
 https://github.com/mrinmoy1000/osp_batch
 https://github.com/GauravZope/CoderTechnologiesProj
 https://github.com/gitbh/patient-batch-loader-start-2
@@ -28,10 +26,6 @@ https://github.com/sivadurgaprasadk/spring-batch
 https://github.com/keyur2714/spring_new_batch
 https://github.com/RicardoLR/spring4-batch3-quartz-scheduler-joda
 https://github.com/OhadR/spring-batch-dynamic-composite-test
-https://github.com/Deven2690/SpringBatch
-https://github.com/shamim0754/SpringBatch
-https://github.com/shamim0754/SpringBatch
-https://github.com/bhaskar59/SpringBatch
 https://github.com/aniketrb-github/spring_batch
 https://github.com/NEOZOfrank/javaBatchPrototype
 https://github.com/hivp/MultiThreadBatch_SpringBatch_Example

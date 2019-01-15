@@ -7,7 +7,5 @@ public class CustomItemWriter {
 }
 
 
-
-// nhung nguoi nghe rock la nguoi song rat tram - sau
-
-// thanh nien nay ngoi code 
+// ngoi nghe nhac - den gio cua no roi day
+// no mac do 1 phong cach - nghe nhac
