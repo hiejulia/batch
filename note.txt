@@ -20,8 +20,6 @@ https://github.com/tuxdevelop/spring-batch-lightmin-samples
 https://github.com/CogStack/CogStack-Pipeline
 https://github.com/mminella/SpringBatchWebinar
 https://github.com/create1st/spring-batch
-https://github.com/mminella/Pro-Spring-Batch-source-code
-https://github.com/sedkijdaida/spring-batch-quartz
 https://github.com/lvyong1985/spring-batch-showcase
 https://github.com/pauldeng/aws-elastic-beanstalk-worker-spring-boot-spring-batch-template
 https://github.com/gordonad/BatchCloudFoundry/tree/master/src/main/java/com/gordondickens/bcf

@@ -28,22 +28,24 @@ Batch data
     + Job1 : read CSV file - import data to Cassandra 
     + Job2 : join between 2 CSV files - the csv files are ordered by the join column
 + Back up job : with Quazt scheduling 
-
++ Transaction Spring batch - and job state
++ Scalability : distributed batch processing  
 + Transfer file through SFTP
 
 
 
 ---
 + Feature 2 : 
-    + Import Relational database with spring batch 
-    + Spring data elasticsearch 
-    + import index from elasticsearch to kibana for visual statistics 
-    
-
+    + Read data from database - MySQL database 
+    + Process data in ItemProcess 
+    + Save the out put  in CSV/ XML file 
+    + Scheduled job run 10s 
+    + 
 
 --------- 
 
 
 
+  
 
 
