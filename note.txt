@@ -8,9 +8,7 @@ https://github.com/vishu-guntupalli/spring-batch-starter
 
 Big project : 
 https://github.com/debdayal/pro-spring-batch
-
 https://github.com/Codingpedia/podcastpedia-batch
-https://github.com/spring-projects/spring-batch
 https://github.com/Dennyss/BatchingConsumer
 https://github.com/isopropylcyanide/SpringBatch-KafkaDB
 https://github.com/jbrat/BankTransactionProject/tree/master/BankTransactionProject/src/main/java/com/ujm/xmltech
@@ -18,32 +16,34 @@ https://github.com/EBIvariation/eva-pipeline
 https://github.com/K2Prasanna/SpringBatch
 https://github.com/K2Prasanna/SpringBatch
 https://github.com/sivadurgaprasadk/spring-batch
-https://github.com/pranav-patil/spring-mvc
-https://github.com/fjcarretero/spring-batch-jms-generic-slave
-https://github.com/eddiejaoude/db2es
-https://github.com/abnair2016/spring-camel
 https://github.com/tuxdevelop/spring-batch-lightmin-samples
 https://github.com/CogStack/CogStack-Pipeline
 https://github.com/mminella/SpringBatchWebinar
-https://github.com/przodownikR1/springBatchJmsKata
 https://github.com/create1st/spring-batch
 https://github.com/mminella/Pro-Spring-Batch-source-code
-https://github.com/skilledmonster/DataTransporter
 https://github.com/sedkijdaida/spring-batch-quartz
 https://github.com/lvyong1985/spring-batch-showcase
 https://github.com/pauldeng/aws-elastic-beanstalk-worker-spring-boot-spring-batch-template
-https://github.com/thehyve/transmart-batch
-https://github.com/grove693/spring-batch-cassandra
 https://github.com/gordonad/BatchCloudFoundry/tree/master/src/main/java/com/gordondickens/bcf
-https://github.com/Seomiji/spring-batch-extension
-https://github.com/jojoldu/spring-batch-in-action
-https://github.com/spring-projects/spring-xd
 https://github.com/Apress/pro-spring-batch/tree/master/mminella-Pro-Spring-Batch-source-code-c7f91ef
-https://github.com/IkbelBenAbdessamad/SpringData_Batch_Elasticsearch_Kibana
 testing job : https://github.com/mguennec/SpringBatchTester
 test : https://github.com/YounHyunJun/SpringBatchTestCase
 cassandra >  https://github.com/mohdnadeemakhtar/Spring-Batch-with-Cassandra
 performance tuning: https://github.com/SpringOne2GX-2014/spring-batch-performance-tuning/tree/master/sample_code
+https://github.com/spring-projects/spring-batch
+
+
+
+
+
+--------
+
+
+
+Ap dung project portfolio : 
+https://github.com/jojoldu/spring-batch-in-action
+https://github.com/grove693/spring-batch-cassandra
+https://github.com/spring-projects/spring-xd
 
 
 
@@ -52,4 +52,6 @@ performance tuning: https://github.com/SpringOne2GX-2014/spring-batch-performanc
 
 
 
+
+-------
 

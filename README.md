@@ -8,8 +8,8 @@ Batch data
 + Scheduling 
 + Database : Cassandra - PostgreSQL - MySQL 
 
-+ ElasticSearch
-
++ ElasticSearch instance 
++ Kibana 
 
 
 
@@ -33,7 +33,12 @@ Batch data
 
 
 
-
+---
++ Feature 2 : 
+    + Import Relational database with spring batch 
+    + Spring data elasticsearch 
+    + import index from elasticsearch to kibana for visual statistics 
+    
 
 
 --------- 
