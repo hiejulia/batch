@@ -1,27 +1,10 @@
-https://github.com/hellolyx1618/SpringBatchTest
-testing job : https://github.com/mguennec/SpringBatchTester
-https://github.com/connect2nelson/SpringBatchTesting
-https://github.com/chichasonu/spring-batch-multi-ds
-test : https://github.com/YounHyunJun/SpringBatchTestCase
-cassandra >  https://github.com/mohdnadeemakhtar/Spring-Batch-with-Cassandra
-https://github.com/Apress/pro-spring-batch/tree/master/mminella-Pro-Spring-Batch-source-code-c7f91ef
-performance tuning: https://github.com/SpringOne2GX-2014/spring-batch-performance-tuning/tree/master/sample_code
 
-
-Book: 
-
-
-
--------------
 
 
 Starter : 
 https://github.com/vishu-guntupalli/spring-batch-starter
 
 
-
-
---------
 
 Big project : 
 https://github.com/debdayal/pro-spring-batch
@@ -55,14 +38,12 @@ https://github.com/gordonad/BatchCloudFoundry/tree/master/src/main/java/com/gord
 https://github.com/Seomiji/spring-batch-extension
 https://github.com/jojoldu/spring-batch-in-action
 https://github.com/spring-projects/spring-xd
-
+https://github.com/Apress/pro-spring-batch/tree/master/mminella-Pro-Spring-Batch-source-code-c7f91ef
 https://github.com/IkbelBenAbdessamad/SpringData_Batch_Elasticsearch_Kibana
------ 
-
-
-
-
-
+testing job : https://github.com/mguennec/SpringBatchTester
+test : https://github.com/YounHyunJun/SpringBatchTestCase
+cassandra >  https://github.com/mohdnadeemakhtar/Spring-Batch-with-Cassandra
+performance tuning: https://github.com/SpringOne2GX-2014/spring-batch-performance-tuning/tree/master/sample_code
 
 
 
