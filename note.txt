@@ -1,9 +1,6 @@
 https://github.com/hellolyx1618/SpringBatchTest
 testing job : https://github.com/mguennec/SpringBatchTester
 https://github.com/connect2nelson/SpringBatchTesting
-https://github.com/grove693/spring-batch-cassandra
-https://github.com/mickknutson/spring_batch_course
-https://github.com/mahadevshindhe/spring-batch-quartz-scheduler
 https://github.com/chichasonu/spring-batch-multi-ds
 test : https://github.com/YounHyunJun/SpringBatchTestCase
 cassandra >  https://github.com/mohdnadeemakhtar/Spring-Batch-with-Cassandra

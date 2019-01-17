@@ -16,6 +16,10 @@ Batch data
 
 ## Feature 
 + Read - Process - Write data in batches 
+    + Cassandra 
+        + 2 jobs 
+            + Read CSV file - import to Cassandra 
+            + Perform 2 join CSV file - order by join column 
 + Transform and save CSV data file - and write to MySQL database 
 + Transaction 
 + Write file XML config 
