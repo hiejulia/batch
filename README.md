@@ -25,6 +25,8 @@ Batch data
     + Job2 : join between 2 CSV files - the csv files are ordered by the join column
 + Back up job : with Quazt scheduling 
 
++ Transfer file through SFTP
+
 
 
 
