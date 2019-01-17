@@ -6,7 +6,8 @@ Batch data
 + Spring batch 
 + MySQL 
 + Scheduling 
-+ Database : Cassandra - PostgreSQL - MySQL 
++ Database : Cassandra - PostgreSQL - MySQL
+    + Cassandra  
 
 + ElasticSearch instance 
 + Kibana 

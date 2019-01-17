@@ -38,13 +38,30 @@ public class JobCompletionNotificationListener  extends JobExecutionListenerSupp
 
         }
     }
-// con nho nay doc rat nhieu tin tuc - e hay qua hen - i am bored 0
+//set up cassandra database
+    // qua nhieu thang tan - a du hap dan nguoi khac gioi day ban -
+// day la kieu nguoi co the gioi rieng ay - the gioi noi tam phong phu
 
-    // tan sai cach roi nhe
+// nhung nguoi nghe dream theater - la nhung nguoi cuc ki song noi tam - the thoi
 
 
-    // mot anh chang giong y con be nay -
 
-    // no van code ma - phong cach - net mat hoi buon - du me con lin nay no dau vai cut -0
+// nghe dream theater -
+
+    /// nghe dream theater -
+
+    // nghe dong progressive metal luonb a
+
+    // day la kieu nguoi cam xu c=
+    // nghe dream theater luon a - no dang code - no khong muon ai stop no het
+
+
+
+
+
+
+
+    // nghe dream theater luon
 
 }
+
