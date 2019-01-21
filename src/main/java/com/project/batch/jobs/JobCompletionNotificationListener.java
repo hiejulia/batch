@@ -38,30 +38,7 @@ public class JobCompletionNotificationListener  extends JobExecutionListenerSupp
 
         }
     }
-//set up cassandra database
-    // qua nhieu thang tan - a du hap dan nguoi khac gioi day ban -
-// day la kieu nguoi co the gioi rieng ay - the gioi noi tam phong phu
 
-// nhung nguoi nghe dream theater - la nhung nguoi cuc ki song noi tam - the thoi
-
-
-
-// nghe dream theater -
-
-    /// nghe dream theater -
-
-    // nghe dong progressive metal luonb a
-
-    // day la kieu nguoi cam xu c=
-    // nghe dream theater luon a - no dang code - no khong muon ai stop no het
-
-
-
-
-
-
-
-    // nghe dream theater luon
 
 }
 
