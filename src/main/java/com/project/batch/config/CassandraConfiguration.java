@@ -6,7 +6,3 @@ public class CassandraConfiguration {
 
 
 
-
-
-// den toi la khong duoc an nua 
-

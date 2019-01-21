@@ -14,6 +14,18 @@ testing job : https://github.com/mguennec/SpringBatchTester
 https://github.com/debdayal/pro-spring-batch/tree/master/statement-job/src/main/java/com/apress/springbatch/statement
 https://github.com/gordonad/BatchCloudFoundry/tree/master/src/main/java/com/gordondickens/bcf
 https://github.com/ghillert/spring-batch-integration-sample
+https://github.com/langmi/spring-batch-examples-readers/tree/5b330a82fe26e577785d03a5a4ceb3f06351c19d
+https://github.com/langmi/spring-batch-examples-complex/tree/12f6f70ae4ab5b016555e64b9aa12a7d11e212d7/src/main/java/de/langmi/spring/batch/examples/complex
+https://github.com/tolitius/gridy-batch
+
+
+
+
+
+
+
+
 
 -------
+
 
