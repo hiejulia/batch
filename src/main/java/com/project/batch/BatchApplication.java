@@ -13,3 +13,25 @@ public class BatchApplication {
 }
 
 
+
+
+// es log -  application.yml : 
+
+/**
+be ni 
+
+
+tui no viet desktop applicaton 
+
+
+
+sieu pro 
+lap trinh ngon ngu tu duy 
+
+vai cut nghe rock 
+
+
+
+
+
+ */
