@@ -21,18 +21,18 @@ public class PersonItemProcessor implements ItemProcessor<PersonDTO,Person>{
      */
     @Override
     public Person process(PersonDTO personDTO) throws Exception {
-        // Validation
+
         // Convert name to uppercase
 
         String firstName = personDTO.getFirstName().toUpperCase();
 
         String lastName = personDTO.getLastName().toUpperCase();
 
-
         // transformedPerson :
         final Person transformedPerson = new Person(new PersonPrimaryKey(firstName, lastName));
 
         // return transformed person
+        // dep trai bay
         return transformedPerson;
     }
 
