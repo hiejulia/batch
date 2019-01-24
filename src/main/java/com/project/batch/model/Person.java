@@ -21,4 +21,8 @@ public class Person {
     public void setPerson(PersonPrimaryKey person) {
         this.person = person;
     }
+
+    public Person(PersonPrimaryKey person) {
+        this.person = person;
+    }
 }

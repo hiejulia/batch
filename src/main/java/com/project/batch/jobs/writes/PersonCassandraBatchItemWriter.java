@@ -43,10 +43,8 @@ public class PersonCassandraBatchItemWriter<Person> implements ItemWriter<Person
 
             for (Person entity : items) {
 
-                
-
                 personService.saveEntity(entity);
-
+                // save to cassandra database
 
 
 
