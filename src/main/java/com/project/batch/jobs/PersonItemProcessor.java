@@ -15,22 +15,24 @@ public class PersonItemProcessor implements ItemProcessor<PersonDTO,Person>{
 
     /**
      *
-     * @param person
+     * @param personDTO
      * @return Person
      * @throws Exception
      */
     @Override
-    public Person process(final PersonDTO person) throws Exception {
-
+    public Person process(PersonDTO personDTO) throws Exception {
+        // Validation
         // Convert name to uppercase
-        final String firstName = person.getFirstName().toUpperCase();
 
-        final String lastName = person.getLastName().toUpperCase();
+        String firstName = personDTO.getFirstName().toUpperCase();
+
+        String lastName = personDTO.getLastName().toUpperCase();
 
 
+        // transformedPerson :
         final Person transformedPerson = new Person(new PersonPrimaryKey(firstName, lastName));
 
-
+        // return transformed person
         return transformedPerson;
     }
 

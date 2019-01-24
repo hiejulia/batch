@@ -11,4 +11,6 @@ public interface MovieRepository extends CassandraRepository<MovieDetails,Long> 
 
 }
 
-//
+// hot go cua lang lap trinh -
+
+// tinh con nho nay giong con trai vcl
