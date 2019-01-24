@@ -1,34 +1,3 @@
-+ Run all the project - with cassandra
++ Fix cassandra configuration class
 
-+ Add xml data -
-
-
-
-+ run all project with kafka
-
-
-
----------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-------------
-
-
-
-
-
-
++ Hoan thanh kafka

@@ -33,3 +33,4 @@ public class CassandraConfig extends AbstractCassandraConfiguration {
         return new BasicCassandraMappingContext();
     }
 }
+
