@@ -1,19 +1,27 @@
-//package com.project.batch.batch;
-//
-//
-//import com.accolite.aman.SpringBatchCsvProcessor.model.User;
-//import org.springframework.batch.item.ItemProcessor;
-//import org.springframework.stereotype.Component;
-//
-//import java.util.Date;
-//
-//@Component
-//public class UserProcessor implements ItemProcessor<User, User> {
-//
-//    @Override
-//    public User process(User user) throws Exception {
-//        user.setId(1L);
-//        user.setDate(new Date());
-//        return user;
-//    }
-//}
+package com.project.batch.batch;
+
+
+
+import com.project.batch.model.user;
+import org.springframework.batch.item.ItemProcessor;
+import org.springframework.stereotype.Component;
+
+import java.util.Date;
+
+
+/**
+ * User process class
+ */
+@Component
+public class UserProcessor implements ItemProcessor<user, user> {
+    // implements ItemProcessor
+
+    // Process 0 user - . set id -
+
+    @Override
+    public user process(user user) throws Exception {
+        user.setId(1L);
+        user.setDate(new Date());
+        return user;
+    }
+}

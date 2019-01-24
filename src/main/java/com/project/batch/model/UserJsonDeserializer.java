@@ -5,13 +5,15 @@ package com.project.batch.model;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonToken;
 import com.fasterxml.jackson.core.io.JsonEOFException;
-import org.apache.kafka.common.errors.SerializationException;
-import org.springframework.kafka.support.serializer.JsonDeserializer;
 
-public class UserJsonDeserializer extends JsonDeserializer<User> {
+import com.fasterxml.jackson.databind.JsonDeserializer;
+import org.apache.kafka.common.errors.SerializationException;
+
+
+public class UserJsonDeserializer extends JsonDeserializer<user> {
 
     @Override
-    public User deserialize(String topic, byte[] data) {
+    public user deserialize(String topic, byte[] data) {
         try {
             return super.deserialize(topic, data);
         } catch (Exception e) {
