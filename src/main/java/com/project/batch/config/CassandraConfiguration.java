@@ -32,7 +32,7 @@ public class CassandraConfiguration  extends AbstractCassandraConfiguration {
     @Autowired
     private Environment propertyEnvironment;
 
-
+    // Cassandra value : keyspaceName, @Value : spring.data.cassandra -keyspace - contactPoint - port -
     @Value("${spring.data.cassandra.keyspace-name}")
     private String keyspaceName;
 

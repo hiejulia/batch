@@ -21,9 +21,11 @@ import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Component;
 
 
+/**
+ * Movie merge CSV file reader
+ */
 
-
-public class MovieMergeCSVFileReader implements ItemReader<com.example.springBatch.model.MovieDetails>, ItemStream  {
+public class MovieMergeCSVFileReader implements ItemReader<MovieDetails>, ItemStream  {
 
 
     private SingleItemPeekableItemReader<MovieDTO> moviePeekReader;
@@ -42,16 +44,17 @@ public class MovieMergeCSVFileReader implements ItemReader<com.example.springBat
     public MovieMergeCSVFileReader(ResourceLoader resourceLoader) {
         loadReaders(resourceLoader);
     }
-
+    // Load reader
 
     private void loadReaders(ResourceLoader resourceLoader) {
 
         ItemReader<MovieDTO> mReader;
+
         ItemReader<DirectorDTO> dirReader;
 
         mReader = new FlatFileItemReaderBuilder<MovieDTO>()
                 .name("movieReader")
-                .resource(resourceLoader.getResource("classpath:sample_movies.csv"))
+                .resource(resourceLoader.getResource("classpath:sample_movies.csv")) // movie csv file
                 .delimited()
                 .delimiter(",")
                 .names(new String[]{"movieId", "title"})
@@ -117,6 +120,7 @@ public class MovieMergeCSVFileReader implements ItemReader<com.example.springBat
     }
 
 
+
     private MovieDetails convertMovie(MovieDTO m) {
         MovieDetails returned = new MovieDetails();
         returned.setMovieId(m.getMovieId());
@@ -128,7 +132,6 @@ public class MovieMergeCSVFileReader implements ItemReader<com.example.springBat
         returned.setMovieId(m.getMovieId());
         returned.setTitle(m.getTitle());
         returned.setDirector(dir.getName());
-
         return returned;
 
     }
@@ -146,11 +149,15 @@ public class MovieMergeCSVFileReader implements ItemReader<com.example.springBat
 
     }
 
+
+
     @Override
     public void close() throws ItemStreamException {
         moviePeekReader.close();
         directorPeekReader.close();
     }
+
+
 
 
 

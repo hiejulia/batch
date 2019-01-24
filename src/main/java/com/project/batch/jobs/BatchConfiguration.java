@@ -50,15 +50,16 @@ public class BatchConfiguration {
 
     // tag::readerwriterprocessor[]
 
-    // Read
+
+    // Read data
     @Bean
     public FlatFileItemReader<PersonDTO> reader() {
         return new FlatFileItemReaderBuilder<PersonDTO>()
                 .name("personItemReader")
                 .resource(resourceLoader.getResource("classpath:sample_persons.csv"))
                 .delimited()
-                .delimiter(",")
-                .names(new String[]{"firstName", "lastName"})
+                .delimiter(",") // split by ,
+                .names(new String[]{"firstName", "lastName"}) // name : first name - last bame
                 .fieldSetMapper(new BeanWrapperFieldSetMapper<PersonDTO>() {{
                     setTargetType(PersonDTO.class);
                 }})
@@ -67,7 +68,7 @@ public class BatchConfiguration {
 
     @Bean
     public ItemReader<MovieDetails>  mergeCSVFilesReader(){
-        return new MovieMergeCSVFilesReader(resourceLoader);
+        return new MovieMergeCSVFileReader(resourceLoader);
     }
 
     /**

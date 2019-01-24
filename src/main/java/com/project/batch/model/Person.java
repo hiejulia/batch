@@ -8,11 +8,17 @@ import org.springframework.data.cassandra.core.mapping.Table;
 
 // Table : Person - to cassandra database
 @Table("person")
-@Data
 public class Person {
 
     @PrimaryKey
     private PersonPrimaryKey person;
 
 
+    public PersonPrimaryKey getPerson() {
+        return person;
+    }
+
+    public void setPerson(PersonPrimaryKey person) {
+        this.person = person;
+    }
 }

@@ -1,13 +1,17 @@
 + Run all the project - with cassandra
 
++ Add xml data -
 
+
+
++ run all project with kafka
 
 
 
 ---------
-chuyen sang refactor code : Bellfons
 
-+ Add xml data - run with it
+
+
 
 
 

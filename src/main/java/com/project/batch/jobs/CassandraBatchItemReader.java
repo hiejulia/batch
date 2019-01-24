@@ -39,6 +39,8 @@ public class CassandraBatchItemReader<Person> implements ItemReader<Person> {
 	        }*/
         log.debug("Read operations is performing, the object size is  {}");
 
+        // Read the file - csv file
+
 
 
 
