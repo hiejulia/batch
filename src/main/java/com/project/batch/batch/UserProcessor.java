@@ -14,9 +14,6 @@ import java.util.Date;
  */
 @Component
 public class UserProcessor implements ItemProcessor<user, user> {
-    // implements ItemProcessor
-
-    // Process 0 user - . set id -
 
     @Override
     public user process(user user) throws Exception {
@@ -25,3 +22,4 @@ public class UserProcessor implements ItemProcessor<user, user> {
         return user;
     }
 }
+

@@ -22,10 +22,6 @@ public class UserDbReader implements ItemReader<user> {
     @Value("${input.csv.file}")
     private Resource resource;
 
-    // File source : csv file
-
-
-    // Item reader 
 
     @Bean
     public FlatFileItemReader<user> itemReader(){
@@ -37,18 +33,28 @@ public class UserDbReader implements ItemReader<user> {
         return flatFileItemReader;
     }
 
+    // get line mapper
     @Bean
     public LineMapper<user> getLineMapper() {
         DefaultLineMapper<user> userLineMapper = new DefaultLineMapper<user>();
         DelimitedLineTokenizer lineTokenizer = new DelimitedLineTokenizer();
         lineTokenizer.setDelimiter(",");
+
         lineTokenizer.setStrict(false);
+
+        // set name : id, name, department, salary
+
+
         lineTokenizer.setNames("id", "name", "department", "salary");
 
         BeanWrapperFieldSetMapper<user> fieldSetMapper = new BeanWrapperFieldSetMapper<>();
+
         fieldSetMapper.setTargetType(user.class);
+
         userLineMapper.setLineTokenizer(lineTokenizer);
+
         userLineMapper.setFieldSetMapper(fieldSetMapper);
+        // Read csv file
         return userLineMapper;
     }
 
@@ -58,3 +64,4 @@ public class UserDbReader implements ItemReader<user> {
         return null;
     }
 }
+

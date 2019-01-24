@@ -1,7 +1,7 @@
 package com.project.batch.writer;
 
 
-// Write class to database
+// Custom Item Writer
 public class CustomItemWriter {
 
 }
