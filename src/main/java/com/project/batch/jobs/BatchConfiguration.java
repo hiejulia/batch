@@ -3,6 +3,7 @@ package com.project.batch.jobs;
 
 import javax.sql.DataSource;
 
+import com.project.batch.config.CassandraConfiguration;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
@@ -22,17 +23,14 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.core.io.ResourceLoader;
 
-import com.example.springBatch.jobs.writers.MovieCassandraBatchItemWriter;
-import com.example.springBatch.jobs.writers.PersonCassandraBatchItemWriter;
-import com.example.springBatch.model.MovieDetails;
-import com.example.springBatch.model.Person;
-import com.example.springBatch.model.PersonDTO;
 
+// Ai cung ngoi im lang - the thoi - no khong thich dau
 @Configuration
 @EnableBatchProcessing
 @Import(CassandraConfiguration.class)
-@ComponentScan(basePackages = "com.example.springBatch")
+//@ComponentScan(basePackages = "com.example.springBatch")
 public class BatchConfiguration {
+    // Autowired :
 
     @Autowired
     public JobBuilderFactory jobBuilderFactory;

@@ -1,6 +1,7 @@
 package com.project.batch.jobs;
 
 
+import com.project.batch.model.Person;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.batch.core.BatchStatus;
@@ -10,10 +11,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.cassandra.core.CassandraTemplate;
 import org.springframework.stereotype.Component;
 
-import com.example.springBatch.model.Person;
+
 
 @Component
 public class JobCompletionNotificationListener  extends JobExecutionListenerSupport {
+    // JobCompletionNotificationListener
+
     private static final Logger log = LoggerFactory.getLogger(JobCompletionNotificationListener.class);
 
     private final CassandraTemplate cassandraTemplate;
@@ -22,18 +25,23 @@ public class JobCompletionNotificationListener  extends JobExecutionListenerSupp
     public JobCompletionNotificationListener(final CassandraTemplate cassandraTemplate) {
         this.cassandraTemplate = cassandraTemplate;
     }
+    // CassandraTemplate
 
+    // After job :
     @Override
     public void afterJob(final JobExecution jobExecution) {
         if (jobExecution.getStatus() == BatchStatus.COMPLETED) {
-            log.info("!!! NewSchemaJob is finished, Time to verify the results");
 
-            log.info("Checking if items added..");
 
             long nrEntities = cassandraTemplate.count(Person.class);
+
             log.info("Number of records in Person table is " + nrEntities);
+
+            // Long the number of person in the data file 
 
         }
     }
+
+
 
 }

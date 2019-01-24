@@ -9,8 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
-
 @Service
+@Component
 public class PersonService {
 
     @Autowired
@@ -25,8 +25,8 @@ public class PersonService {
         this.personRepo = personRepo;
     }
 
-    public Person saveEntity(Person p) {
-        return personRepo.save(p);
+    public void saveEntity(Person p) {
+        personRepo.save(p);
     }
 
     public List<Person> saveAll(List<Person> toSave){

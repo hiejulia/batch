@@ -32,8 +32,9 @@ public class PersonItemProcessor implements ItemProcessor<PersonDTO,Person>{
         final Person transformedPerson = new Person(new PersonPrimaryKey(firstName, lastName));
 
         // return transformed person
-        // dep trai bay
         return transformedPerson;
+
+        //no muon di ma
     }
 
 
