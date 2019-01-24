@@ -1,6 +1,7 @@
 package com.project.batch.properties;
 
 
+// Property key class
 public class PropertyKeys {
 
     public static String CASSANDRA_KEYSPACE = "spring.data.cassandra.keyspace-name";

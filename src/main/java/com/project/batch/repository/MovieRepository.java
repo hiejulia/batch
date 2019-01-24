@@ -1,9 +1,14 @@
 package com.project.batch.repository;
 
+import com.project.batch.model.MovieDetails;
 import org.springframework.data.cassandra.repository.CassandraRepository;
 
-import com.example.springBatch.model.MovieDetails;
 
+
+// Repository
 public interface MovieRepository extends CassandraRepository<MovieDetails,Long> {
+    // Movie Repository
 
 }
+
+//

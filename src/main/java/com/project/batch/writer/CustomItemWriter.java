@@ -5,7 +5,3 @@ package com.project.batch.writer;
 public class CustomItemWriter {
 
 }
-
-
-// ngoi nghe nhac - den gio cua no roi day
-// no mac do 1 phong cach - nghe nhac
