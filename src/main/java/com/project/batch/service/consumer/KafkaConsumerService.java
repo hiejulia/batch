@@ -15,7 +15,7 @@ public class KafkaConsumerService {
     // Consumer
     @KafkaListener(topics= "${kafka.csv.topic}", containerFactory = "kafkaListenerContainerFactory", groupId = ("${kafka.csv.group.id}"))
     public void consume(user user){
-        
+
 
     }
 
