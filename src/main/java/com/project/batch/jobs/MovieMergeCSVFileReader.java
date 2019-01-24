@@ -2,6 +2,9 @@ package com.project.batch.jobs;
 
 
 
+import com.project.batch.model.DirectorDTO;
+import com.project.batch.model.MovieDTO;
+import com.project.batch.model.MovieDetails;
 import org.springframework.batch.item.ExecutionContext;
 import org.springframework.batch.item.ItemReader;
 import org.springframework.batch.item.ItemStream;
@@ -17,28 +20,26 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Component;
 
-import com.example.springBatch.model.DirectorDTO;
-import com.example.springBatch.model.MovieDTO;
-import com.example.springBatch.model.MovieDetails;
-import com.example.springBatch.model.PersonDTO;
 
 
-public class MovieMergeCSVFilesReader implements ItemReader<com.example.springBatch.model.MovieDetails>, ItemStream  {
 
+public class MovieMergeCSVFileReader implements ItemReader<com.example.springBatch.model.MovieDetails>, ItemStream  {
 
 
     private SingleItemPeekableItemReader<MovieDTO> moviePeekReader;
+
     private SingleItemPeekableItemReader<DirectorDTO> directorPeekReader;
 
     @Autowired
     private ResourceLoader resourceLoader;
 
-    public MovieMergeCSVFilesReader() {
+
+    public MovieMergeCSVFileReader() {
 
 
     }
 
-    public MovieMergeCSVFilesReader(ResourceLoader resourceLoader) {
+    public MovieMergeCSVFileReader(ResourceLoader resourceLoader) {
         loadReaders(resourceLoader);
     }
 

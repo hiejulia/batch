@@ -4,6 +4,11 @@ package com.project.batch.jobs;
 import javax.sql.DataSource;
 
 import com.project.batch.config.CassandraConfiguration;
+import com.project.batch.jobs.writes.MovieCassandraBatchItemWriter;
+import com.project.batch.jobs.writes.PersonCassandraBatchItemWriter;
+import com.project.batch.model.MovieDetails;
+import com.project.batch.model.Person;
+import com.project.batch.model.PersonDTO;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
 import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
@@ -24,13 +29,14 @@ import org.springframework.context.annotation.Import;
 import org.springframework.core.io.ResourceLoader;
 
 
-// Ai cung ngoi im lang - the thoi - no khong thich dau
+
 @Configuration
 @EnableBatchProcessing
 @Import(CassandraConfiguration.class)
 //@ComponentScan(basePackages = "com.example.springBatch")
 public class BatchConfiguration {
-    // Autowired :
+
+    final int batchSize = 10;
 
     @Autowired
     public JobBuilderFactory jobBuilderFactory;
@@ -40,8 +46,11 @@ public class BatchConfiguration {
 
     @Autowired
     private ResourceLoader resourceLoader;
+    // Job builder factory - Step buider - Resource builder
 
     // tag::readerwriterprocessor[]
+
+    // Read
     @Bean
     public FlatFileItemReader<PersonDTO> reader() {
         return new FlatFileItemReaderBuilder<PersonDTO>()
@@ -61,6 +70,10 @@ public class BatchConfiguration {
         return new MovieMergeCSVFilesReader(resourceLoader);
     }
 
+    /**
+     * Processor
+     * @return PersonItemProcessor
+     */
     @Bean
     public PersonItemProcessor processor() {
         return new PersonItemProcessor();
@@ -70,7 +83,6 @@ public class BatchConfiguration {
     public ItemWriter<MovieDetails> movieWriter(){
         return new MovieCassandraBatchItemWriter();
     }
-
 
     @Bean
     public Job mergeAndImportMovieRelatedCSV(JobCompletionNotificationListener listener, @Qualifier("mergeCSVMovieStep1")Step step) {
@@ -82,14 +94,17 @@ public class BatchConfiguration {
     }
 
 
+    // Merge CSV Movie step 1
     @Bean
     public Step mergeCSVMovieStep1() {
         return stepBuilderFactory.get("movieStep")
-                .<MovieDetails,MovieDetails> chunk(10)
+                .<MovieDetails,MovieDetails> chunk(batchSize)
                 .reader(mergeCSVFilesReader())
                 .writer(movieWriter())
                 .build();
     }
+
+
 
     @Bean
     public ItemWriter<Person> writer(DataSource dataSource) {
@@ -98,6 +113,13 @@ public class BatchConfiguration {
     // end::readerwriterprocessor[]
 
     // tag::jobstep[]
+
+    /**
+     * Import User job
+     * @param listener
+     * @param step1
+     * @return
+     */
     @Bean
     public Job importUserJob(JobCompletionNotificationListener listener, @Qualifier("step1") Step step1) {
         return jobBuilderFactory.get("importUserJob")
@@ -107,15 +129,24 @@ public class BatchConfiguration {
                 .build();
     }
 
+    /**
+     * Step 1
+     * @param writer
+     * @return
+     */
     @Bean
     public Step step1(ItemWriter<Person> writer) {
         return stepBuilderFactory.get("step1")
-                .<PersonDTO, Person> chunk(10)
+                .<PersonDTO, Person> chunk(batchSize) // chunk: size
                 .reader(reader())
                 .processor(processor())
                 .writer(writer)
                 .build();
     }
     // end::jobstep[]
+
+
+    // cuc ki kho chiu
+
 
 }

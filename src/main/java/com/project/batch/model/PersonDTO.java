@@ -1,9 +1,6 @@
 package com.project.batch.model;
 
 
-import lombok.Data;
-import lombok.ToString;
-
 
 public class PersonDTO {
 

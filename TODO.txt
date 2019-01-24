@@ -7,11 +7,6 @@
 ---------
 chuyen sang refactor code : Bellfons
 
-
-
-
-
-
 + Add xml data - run with it
 
 
