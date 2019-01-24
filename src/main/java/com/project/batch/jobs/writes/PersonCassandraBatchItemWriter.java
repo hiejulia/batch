@@ -10,11 +10,6 @@ import org.springframework.batch.item.ItemWriter;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 
-/**
- * WRITE TO CASSANDRA DATABASE
- *
- * @param <Person>
- */
 public class PersonCassandraBatchItemWriter<Person> implements ItemWriter<Person>, InitializingBean {
 
     protected static final Log logger = LogFactory.getLog(PersonCassandraBatchItemWriter.class);
@@ -43,7 +38,9 @@ public class PersonCassandraBatchItemWriter<Person> implements ItemWriter<Person
 
             for (Person entity : items) {
 
-                personService.saveEntity(entity);
+                logger.debug("Save person {}"+entity);
+
+//                personService.saveEntity(entity);
                 // save to cassandra database
 
 
@@ -55,6 +52,7 @@ public class PersonCassandraBatchItemWriter<Person> implements ItemWriter<Person
 
 
     }
+
 
 }
 

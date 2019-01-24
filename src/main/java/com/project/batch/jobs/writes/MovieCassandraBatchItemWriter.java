@@ -33,7 +33,7 @@ public class MovieCassandraBatchItemWriter  implements ItemWriter<MovieDetails>{
             logger.info("Inserting");
 
             for (MovieDetails movie : items) {
-
+                // Save movie
                 movieService.saveEntity(movie);
 
                 logger.info("Done write to cassandra");

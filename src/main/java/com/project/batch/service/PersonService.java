@@ -3,6 +3,7 @@ package com.project.batch.service;
 
 import java.util.List;
 
+
 import com.project.batch.model.Person;
 import com.project.batch.repository.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,7 +27,7 @@ public class PersonService {
     }
 
     public void saveEntity(Person p) {
-        personRepo.save(p);
+        personRepo.insert(p);
     }
 
 
