@@ -98,3 +98,12 @@ batch-db-upload	Similar to master except that it deserializes the CSV to a H2 Da
   
 
 
+## Cassandra 
+
++ Install Cassandra 
++ Start cassandra  
+
+
+----- 
+
+

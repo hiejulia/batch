@@ -1,0 +1,8 @@
++ run cassandra with docker
++ get cassandra with several command line
++ Run all the project - with cassandra
+
+
+------------
+
+
