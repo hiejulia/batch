@@ -3,7 +3,7 @@ package com.project.batch.jobs;
 
 import javax.sql.DataSource;
 
-import com.project.batch.config.CassandraConfiguration;
+import com.project.batch.config.CassandraConfig;
 import com.project.batch.jobs.writes.MovieCassandraBatchItemWriter;
 import com.project.batch.jobs.writes.PersonCassandraBatchItemWriter;
 import com.project.batch.model.MovieDetails;
@@ -32,8 +32,8 @@ import org.springframework.core.io.ResourceLoader;
 
 @Configuration
 @EnableBatchProcessing
-@Import(CassandraConfiguration.class)
-//@ComponentScan(basePackages = "com.example.springBatch")
+@Import(CassandraConfig.class)
+@ComponentScan(basePackages = "com.project.batch")
 public class BatchConfiguration {
 
     final int batchSize = 10;
