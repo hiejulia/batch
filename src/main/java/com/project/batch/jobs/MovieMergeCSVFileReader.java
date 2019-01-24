@@ -2,7 +2,6 @@ package com.project.batch.jobs;
 
 
 
-
 import org.springframework.batch.item.ExecutionContext;
 import org.springframework.batch.item.ItemReader;
 import org.springframework.batch.item.ItemStream;
@@ -18,6 +17,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Component;
 
+import com.example.springBatch.model.DirectorDTO;
+import com.example.springBatch.model.MovieDTO;
+import com.example.springBatch.model.MovieDetails;
+import com.example.springBatch.model.PersonDTO;
 
 
 public class MovieMergeCSVFilesReader implements ItemReader<com.example.springBatch.model.MovieDetails>, ItemStream  {
@@ -76,11 +79,6 @@ public class MovieMergeCSVFilesReader implements ItemReader<com.example.springBa
                 .build();
     }
 
-
-
-
-
-
     @Override
     public MovieDetails read()
             throws Exception, UnexpectedInputException, ParseException, NonTransientResourceException {
@@ -118,15 +116,12 @@ public class MovieMergeCSVFilesReader implements ItemReader<com.example.springBa
     }
 
 
-    // Convert
     private MovieDetails convertMovie(MovieDTO m) {
         MovieDetails returned = new MovieDetails();
         returned.setMovieId(m.getMovieId());
         returned.setTitle(m.getTitle());
         return returned;
     }
-
-    // Convert
     private MovieDetails convertMovie(MovieDTO m , DirectorDTO dir) {
         MovieDetails returned = new MovieDetails();
         returned.setMovieId(m.getMovieId());

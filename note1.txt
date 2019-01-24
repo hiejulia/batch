@@ -3,19 +3,7 @@ Spring Integration
 Book (done checking - done reading  )
 Medium (done reading )
 
-
-
-
-
-
 Github :
-https://github.com/karthikpamidimarri/springbootSocialIntegration
-
-https://github.com/dzh1104/SpringBootIntegration
-https://github.com/ash-ali/SpringBoot_integration
-https://github.com/C24-Technologies/c24-sample-dataloader
-
-https://github.com/C24-Technologies/c24-sample-dataloader
 https://github.com/chkrishna411/SpringKafkaApplication/tree/master/src/main/java/com/myappl/kafka
 https://github.com/Murugar/SpringHadoopFtp
 https://github.com/Murugar/SpringHadoopBatchImport
@@ -28,19 +16,16 @@ https://github.com/dineshmetkari/SpringMiroserviceKafkaIntegration
 https://github.com/ddubson/ibmmq-boot-app
 https://github.com/emailtohl/integration/tree/master/web/src/main/java/com/github/emailtohl/integration/web
 https://github.com/stokkur/spring-appengine-memcach
-https://github.com/santoshdahal12/SpringBoot-JMS
-https://github.com/jiangvin/integration
 https://github.com/jduranmaster/MicroServices-Architecture-POC-Engine-SpringCloud-SpringBoot-NetflixOSS
 https://github.com/codedrinker/heroku-spring-boot-mybatis-mysql-flyway-example
 https://github.com/holon-platform/holon-datastore-jpa
 https://github.com/AxonFramework/extension-springcloud
-
 https://github.com/BarathArivazhagan/enterprise-integration-patterns
 https://github.com/mvpcortes/easybatch-springboot
 https://github.com/vhoang55/kafka-spark-streaming-weblog
 https://github.com/defrankland/SpringBootUdpStreamServer
 https://github.com/anwfr/stomp-user-example
-
+https://github.com/chirkovd/spring-es-sample
 https://github.com/qlaall/mqttInSpring
 https://github.com/42patterns/training-spring-integration
 https://github.com/chakri1630/simpleloanapp
@@ -48,28 +33,19 @@ https://github.com/personal-funny/integration
 https://github.com/viswanath7/flink-kafka-producer
 https://github.com/przodownikR1/springBatchJmsKata
 https://github.com/3wks/spring-gae-gcs
-https://github.com/gwiazda/springIntegrationRabbitMq
-
-
-
-
-
+https://github.com/skilledmonster/DataTransporter
+https://github.com/yazi-t/spring-hibernate-ogm-redis
+https://github.com/Jakubeeee/online-shop-integration
 
 
 --------
 
 Big project 
-
-
-
-
-
+https://github.com/yazi-t/spring-hibernate-ogm-mongodb
+https://github.com/C24-Technologies/c24-sample-dataloader
 -----
 
 Main big project : 
 
-
-
----
 
 
