@@ -47,8 +47,12 @@ Batch data
 + Feature 3 : 
     + CSV file processing sent to Apache Kafka producer for further processing  
     
++ Feature 4 : 
+    + AWS Elastic Beanstalk Worker Spring Boot with Spring Batch Template
+    + File batch processing template hosted on AWS Elastic Beanstalk
+     
     
-    
++ 
       
     
     

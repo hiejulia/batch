@@ -36,6 +36,71 @@ https://github.com/3wks/spring-gae-gcs
 https://github.com/skilledmonster/DataTransporter
 https://github.com/yazi-t/spring-hibernate-ogm-redis
 https://github.com/Jakubeeee/online-shop-integration
+https://github.com/IBM/spring-boot-continuous-delivery
+https://github.com/iwein/spring-integration/tree/master/spring-integration-file
+https://github.com/iwein/spring-integration/tree/master/spring-integration-jms/src/main/java/org/springframework/integration/jms
+https://github.com/opendevstack/ods-project-quickstarters
+
+https://github.com/liuhongyuand/EasyRest-NAS
+https://github.com/cadmiumkitty/cucumber-jmeter-r-integration
+https://github.com/knes1/springmockedtests
+https://github.com/mjeanroy/dbunit-plus
+https://github.com/Apress/pro-spring-intg
+https://github.com/coveo/spring-boot-parameter-store-integration
+https://github.com/la-team/lightadmin-spring-travel/tree/master/src/main/java/org/springframework/webflow/samples/booking
+https://github.com/ignacioSuay/spring-stream
+https://github.com/amolnayak311/spring-integration-aws/tree/master/src/main/java/org/springframework/integration/aws/sqs
+https://github.com/rocketmq/rocketmq-spring-boot-starter/tree/master/src/main/java/org/rocketmq/starter
+https://github.com/yawn/amqp-spring
+https://github.com/netifi-proteus/proteus-spring
+https://github.com/politie/cinch
+
+
+https://github.com/xetys/microservices-sidecar-example
+https://github.com/Apress/pivotal-cert-spring-enterprise-intg-specialist/tree/master/book-eiws-code-samples-master/05-jms
+https://github.com/Apress/pivotal-cert-spring-enterprise-intg-specialist/tree/master/book-eiws-code-samples-master/06-jms-tx
+https://github.com/Apress/pivotal-cert-spring-enterprise-intg-specialist/tree/master/book-eiws-code-samples-master/08-integration
+https://github.com/raphaelbrugier/spring-integration-kafka-sample/tree/master/src/main/java/com/github/rbrugier
+https://github.com/fmueller/play20-spring-integration
+https://github.com/dturanski/spring-integration-flow
+https://github.com/dsyer/spring-batch-gridgain
+https://github.com/sunny4381/spring-boot-integration-crawler-sample
+https://github.com/authorjapps/spring-boot-integration-test
+https://github.com/BSI-Business-Systems-Integration-AG/ScoutBoot
+https://github.com/zalando-stups
+https://github.com/ranjan-rk/spring-social-flickr/tree/master/batch-importer/src/main/java/org/springframework/social/importer
+https://github.com/garyrussell/sandbox
+https://github.com/Apress/pivotal-cert-spring-enterprise-intg-specialist/tree/master/book-eiws-code-samples-master/09-batch
+https://github.com/spring-projects/protocol-fallback-demo
+https://github.com/cpandey05/siessentials
+https://github.com/janusdn/jersey2-spring4-grizzly2
+https://github.com/jiguan/springboot-jms-realtime-messaging
+https://github.com/jettro/SpringOAuthLinkedinIntegrationSample
+https://github.com/xianlinbox/TDD_Demo
+https://github.com/Pragmatists/junitparams-spring-integration-example
+https://github.com/twellhausen/spring-thrift-integration
+https://github.com/TurgayCan/spring-boot-liquibase-example
+https://github.com/gunnarmorling/methodvalidation-integration
+https://github.com/swapnildipankar/java_jersey_spring_hibernate_maven
+https://github.com/watsonwork/watsonwork-spring-boot
+https://github.com/zhvqee/micro-service-integration
+
+https://github.com/joshlong/spring-integration-activiti
+https://github.com/kbastani/cloud-native-microservice-strangler-example
+https://github.com/jkuipers/spring-session-concurrent-session-control
+https://github.com/garyrussell/sandbox
+https://github.com/andypiper/spring-int-mqtt
+https://github.com/iainporter/spring-file-poller
+https://github.com/bijukunjummen/rg-si
+https://github.com/skprasadu/spring-integration-amqp-publish-subscribe
+https://github.com/joshlong/spring-integration-activiti-sandbox
+https://github.com/unbroken-dome/spring-integration-eventbus
+https://github.com/sabre1041/spring-boot-docker-camel
+https://github.com/erenavsarogullari/OTV_Spring_Integration_AMQP_Support
+https://github.com/snekse/spring-spock-integration-testing
+https://github.com/zalando-stups/booties
+
+
 
 
 --------
@@ -45,7 +110,30 @@ https://github.com/yazi-t/spring-hibernate-ogm-mongodb
 https://github.com/C24-Technologies/c24-sample-dataloader
 -----
 
+
+
+
+
+
+------ AWS -
+
+https://github.com/efenderbosch/spring-boot-aws-cloudsearch
+
+
+
+------ Test integration
+https://github.com/cadmiumkitty/cucumber-jmeter-r-integration
+https://github.com/RedFroggy/spring-cucumber-rest-api
+
+
+
+--------
 Main big project : 
+
+
+
+-------
+
 
 
 
