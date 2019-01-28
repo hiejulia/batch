@@ -23,37 +23,39 @@ import java.util.Map;
 @RequestMapping("/users/load")
 public class LoadController {
 
-    @Autowired
-    private JobLauncher jobLauncher;
-
-    @Autowired
-    private Job job;
-
-
-    // Load - get mapping
-    @GetMapping()
-
-    public BatchStatus load() throws JobParametersInvalidException, JobExecutionAlreadyRunningException, JobRestartException, JobInstanceAlreadyCompleteException {
-
-        Map<String, JobParameter> jobParametersMap = new HashMap<>();
-
-        jobParametersMap.put("time", new JobParameter(System.currentTimeMillis()));
-
-        JobParameters parameters = new JobParameters(jobParametersMap);
-
-        JobExecution jobExecution = jobLauncher.run(job, parameters);
-
-        System.out.println("Job Execution: " + jobExecution.getStatus());
-
-        System.out.println("Batch job is running");
-
-        while (jobExecution.isRunning()){
-
-            System.out.println("...");
-
-        }
-        return jobExecution.getStatus();
-
-    }
+//    @Autowired
+//    private JobLauncher jobLauncher;
+//
+//    @Autowired
+//    private Job job;
+//
+//
+//
+//    @GetMapping()
+//    public BatchStatus load() throws JobParametersInvalidException, JobExecutionAlreadyRunningException, JobRestartException, JobInstanceAlreadyCompleteException {
+//        // Load users - load job
+//
+//        Map<String, JobParameter> jobParametersMap = new HashMap<>();
+//
+//        jobParametersMap.put("time", new JobParameter(System.currentTimeMillis()));
+//
+//        JobParameters parameters = new JobParameters(jobParametersMap);
+//
+//        JobExecution jobExecution = jobLauncher.run(job, parameters);
+//
+//        System.out.println("Job Execution: " + jobExecution.getStatus());
+//        // Den gio con nho nay ngoi code
+//
+//        while (jobExecution.isRunning()){
+//
+//            System.out.println("...");
+//
+//        }
+//        return jobExecution.getStatus();
+//
+//
+//
+//
+//    }
 }
 

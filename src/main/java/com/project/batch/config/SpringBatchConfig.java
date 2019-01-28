@@ -20,6 +20,8 @@
 //@Configuration
 //@EnableBatchProcessing
 //public class SpringBatchConfig {
+
+
 //
 //    @Value("${input.csv.file}")
 //    private  Resource resource;

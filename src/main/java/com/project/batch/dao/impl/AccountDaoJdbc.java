@@ -6,16 +6,12 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.project.batch.dao.AccountDao;
+import com.project.batch.entity.*;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 
-import com.apress.springbatch.statement.dao.AccountDao;
-import com.apress.springbatch.statement.domain.Account;
-import com.apress.springbatch.statement.domain.Address;
-import com.apress.springbatch.statement.domain.Customer;
-import com.apress.springbatch.statement.domain.PricingTier;
-import com.apress.springbatch.statement.domain.Transaction;
-import com.apress.springbatch.statement.domain.TransactionType;
+
 
 public class AccountDaoJdbc extends JdbcTemplate implements AccountDao {
 
@@ -34,6 +30,8 @@ public class AccountDaoJdbc extends JdbcTemplate implements AccountDao {
             return account;
         }
 
+
+        // Build transactions
         private List<Transaction> buildTransactions(ResultSet rs) throws SQLException {
             List<Transaction> transactions = new ArrayList<Transaction>();
 
@@ -60,6 +58,7 @@ public class AccountDaoJdbc extends JdbcTemplate implements AccountDao {
             return transactions;
         }
 
+        //
         private Customer buildCustomer(ResultSet rs) throws SQLException {
             Customer customer = new Customer();
 
@@ -110,6 +109,8 @@ public class AccountDaoJdbc extends JdbcTemplate implements AccountDao {
         }
     }
 
+
+    // Vai chuong -
     @SuppressWarnings("unchecked")
     public List<Account> loadAccounts() {
         return (List<Account>) query(LOAD_ACCOUNTS, new AccountRowMapper());

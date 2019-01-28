@@ -14,8 +14,12 @@ public class Transaction {
 
 
     private long id;
+
     private long accountId;
+
     private String accountNumber;
+
+
     private String ticker;
     private long tickerId;
     private long quantity;

@@ -25,8 +25,6 @@ public class UserDbWriter implements ItemWriter<user> {
      */
     @Override
     public void write(List<? extends user> users) throws Exception {
-
         kafkaProducerService.publishUser(users);
-
     }
 }

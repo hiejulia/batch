@@ -13,4 +13,7 @@ public class AccountTransactionQuantity {
 
     private PricingTier tier;
 
+    // Octavirum cuc ki co dien
+
+
 }

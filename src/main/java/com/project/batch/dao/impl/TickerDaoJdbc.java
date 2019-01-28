@@ -5,12 +5,13 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
+import com.project.batch.dao.TickerDao;
+import com.project.batch.entity.Ticker;
+import com.project.batch.entity.Transaction;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 
-import com.apress.springbatch.statement.dao.TickerDao;
-import com.apress.springbatch.statement.domain.Ticker;
-import com.apress.springbatch.statement.domain.Transaction;
+
 
 public class TickerDaoJdbc extends JdbcTemplate implements TickerDao {
 
@@ -34,6 +35,9 @@ public class TickerDaoJdbc extends JdbcTemplate implements TickerDao {
             "customer c on c.id = a.customer_id " +
             "where c.id = ? " +
             "group by tk.ticker, tk.currentPrice) as stocks";
+
+    // SQL :
+
 
     @SuppressWarnings("unchecked")
     public Ticker findTickerBySymbol(String symbol) {
@@ -78,6 +82,7 @@ public class TickerDaoJdbc extends JdbcTemplate implements TickerDao {
 
     @SuppressWarnings("unchecked")
     public List<Transaction> getStocksForCustomer(long id) {
+        // Get stock for customer - id
         return query(STOCKS_BY_CUSTOMER, new Object [] {id}, new RowMapper() {
 
             public Object mapRow(ResultSet rs, int arg1) throws SQLException {

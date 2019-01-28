@@ -21,4 +21,7 @@ public class Account extends Transaction{
     private List<Transaction> transactions;
 
 
+    // Account :id, accountNumber, cust, cashBalance, tier, transaction
+
+
 }

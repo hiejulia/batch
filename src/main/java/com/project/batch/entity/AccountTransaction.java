@@ -1,10 +1,17 @@
 package com.project.batch.entity;
 
+import lombok.Data;
+
 import java.math.BigDecimal;
 
+
+
+
+@Data
 public class AccountTransaction extends Transaction{
 
 
+    // Octavirum
 
     private String accountNumber;
 
@@ -15,4 +22,7 @@ public class AccountTransaction extends Transaction{
     private long quantity;
 
     private BigDecimal price;
+
+    // Account transaction : accountNumber, tier, fee, quantity, price
+
 }

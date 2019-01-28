@@ -20,11 +20,11 @@
 //import com.datastax.driver.core.policies.RetryPolicy;
 //
 //
-//// Cassandra configuration
 //@Configuration
 //@PropertySource(value = {"classpath:application.properties"})
 //@EnableCassandraRepositories
 //public class CassandraConfiguration  extends AbstractCassandraConfiguration {
+
 //
 //    private static final Logger LOG = LoggerFactory.getLogger(CassandraConfiguration.class);
 //

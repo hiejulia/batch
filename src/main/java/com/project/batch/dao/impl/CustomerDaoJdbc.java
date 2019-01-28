@@ -5,12 +5,13 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
+import com.project.batch.dao.CustomerDao;
+import com.project.batch.entity.Address;
+import com.project.batch.entity.Customer;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 
-import com.apress.springbatch.statement.dao.CustomerDao;
-import com.apress.springbatch.statement.domain.Address;
-import com.apress.springbatch.statement.domain.Customer;
+
 
 public class CustomerDaoJdbc extends JdbcTemplate implements CustomerDao {
 
@@ -20,12 +21,14 @@ public class CustomerDaoJdbc extends JdbcTemplate implements CustomerDao {
 
     @SuppressWarnings("unchecked")
     public Customer findCustomerByTaxId(String taxId) {
+        // Find customer by tax id - tax ID
         List<Customer> customers = query(FIND_BY_TAX_ID,
                 new Object[] { taxId }, new RowMapper() {
 
                     public Object mapRow(ResultSet rs, int arg1)
                             throws SQLException {
                         Customer customer = new Customer();
+                        // Map row
 
                         customer.setId(rs.getLong("id"));
                         customer.setFirstName(rs.getString("firstName"));
@@ -56,7 +59,10 @@ public class CustomerDaoJdbc extends JdbcTemplate implements CustomerDao {
         }
     }
 
+
+    // Save customer
     public void saveCustomer(Customer customer) {
+        // Update - Insert
         if (customer.getId() >= 0) {
             update(UPDATE_CUSTOMER, new Object[] { customer.getFirstName(),
                     customer.getLastName(), customer.getTaxId(),

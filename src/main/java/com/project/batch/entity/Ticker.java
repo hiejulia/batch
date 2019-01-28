@@ -1,7 +1,10 @@
 package com.project.batch.entity;
 
+import lombok.Data;
+
 import java.math.BigDecimal;
 
+@Data
 public class Ticker {
 
     // Ticker : id, ticker, price
