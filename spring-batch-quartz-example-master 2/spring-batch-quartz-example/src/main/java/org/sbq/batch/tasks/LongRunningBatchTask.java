@@ -27,6 +27,8 @@ import java.util.Date;
  */
 public class LongRunningBatchTask implements Tasklet
 {
+
+
     @Override
     public RepeatStatus execute(StepContribution contribution, ChunkContext chunkContext) throws Exception
     {
@@ -45,5 +47,6 @@ public class LongRunningBatchTask implements Tasklet
             }
         }
         return RepeatStatus.FINISHED;
+
     }
 }

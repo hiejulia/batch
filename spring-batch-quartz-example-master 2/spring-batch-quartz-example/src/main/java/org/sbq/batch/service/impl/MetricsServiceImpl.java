@@ -17,22 +17,17 @@ public class MetricsServiceImpl implements MetricsService
     public void calculateEventMetrics(Date startingFrom, Date endingAt)
     {
 
-
-        // TODO implement the actual logic(see README.md for details)
     }
 
     @Override
     public void calculateOnlineMetrics(Date at)
     {
-        System.out.println(">>>> calculateOnlineMetrics( " + at.toString() + " )");
         Random rnd = new Random();
+        // Random
         if (rnd.nextInt(3) == 0)
         {
-            System.out.println(">>>> calculateOnlineMetrics() - TRANSIENT EXCEPTION...");
             throw new TransientException("This kind of problem can sometimes happen!");
         }
-
-        // TODO implement the actual logic(see README.md for details)
     }
 }
 

@@ -45,6 +45,8 @@ public class UserSessionDaoImpl implements UserSessionDao
         // du me tan con nho nay khong duoc
         // sql =
         String sql = "INSERT INTO SBQ_USER_SESSION (USER_ID, SESSION_ID, START_TIME) VALUES (?, ?, ?)";
+
+        // insert into sbq_product - value
         jdbcTemplate.update(sql, new Object[]{userSession.getUserId(), userSession.getSessionId(),
                 new java.sql.Date(userSession.getStartTime().getTime())
         });

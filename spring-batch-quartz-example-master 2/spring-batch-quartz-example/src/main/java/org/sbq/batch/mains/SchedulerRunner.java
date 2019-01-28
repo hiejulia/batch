@@ -36,8 +36,11 @@ import static org.quartz.TriggerBuilder.newTrigger;
 public class SchedulerRunner
 {
 
+
     private final ApplicationContext appCtx;
     private final Scheduler scheduler;
+
+    // Schedule Runner : ApplicationContext , Scheduler
 
     public SchedulerRunner()
     {
@@ -60,8 +63,11 @@ public class SchedulerRunner
         scheduler.start();
     }
 
+
+    // Schedule event
     private void scheduleCalculateEvent() throws SchedulerException
     {
+        // Job
         JobDetail job = newJob(CalculateEventMetricsScheduledJob.class)
                 .withIdentity("calculateEventMetricsScheduledJob", "MetricsCollectors")
                 .requestRecovery(false)
@@ -105,16 +111,21 @@ public class SchedulerRunner
         scheduleJobWithTriggerIfNotPresent(job, trigger);
     }
 
+
+    // Schedule job with trigger
+
     private void scheduleJobWithTriggerIfNotPresent(JobDetail job, Trigger trigger) throws SchedulerException
     {
         if (!scheduler.checkExists(job.getKey()) && !scheduler.checkExists(trigger.getKey()))
         {
             try
             {
+                // no chao ong nay - nhin thang vao mat ma chao - 1 nam roi - khong co tien trien gi ca - va no khong thich kieu nguoi day
                 scheduler.scheduleJob(job, trigger);
+
             } catch (ObjectAlreadyExistsException existsExc)
             {
-                System.out.println("Someone has already scheduled such job/trigger. " + job.getKey() + " : " + trigger.getKey());
+
             }
         }
     }

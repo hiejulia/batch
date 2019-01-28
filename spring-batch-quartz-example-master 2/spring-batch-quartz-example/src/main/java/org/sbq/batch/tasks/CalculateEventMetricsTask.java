@@ -32,6 +32,9 @@ public class CalculateEventMetricsTask implements Tasklet
     @Autowired
     private MetricsService metricsService;
 
+
+    // task : omple tasklet
+
     @Override
     public RepeatStatus execute(StepContribution stepContribution, ChunkContext chunkContext) throws Exception
     {

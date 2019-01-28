@@ -28,6 +28,10 @@ import org.springframework.scheduling.quartz.QuartzJobBean;
  */
 public abstract class AbstractScheduledJob extends QuartzJobBean
 {
+
+    // job = abstract class- extends QuartzJobBean
+
+    // lai la dream theater- dan rock
     private ApplicationContext applicationContext;
 
     public void setApplicationContext(ApplicationContext applicationContext)
