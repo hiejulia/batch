@@ -47,13 +47,14 @@ Batch data
 + Feature 3 : 
     + CSV file processing sent to Apache Kafka producer for further processing  
     
-+ Feature 4 : 
-    + AWS Elastic Beanstalk Worker Spring Boot with Spring Batch Template
-    + File batch processing template hosted on AWS Elastic Beanstalk
-     
-    
-+ 
-      
++ Feature 4 : (ELK folder)
+    + Transfer large data from rational database to NoSQL(Elasticsearch) for index search 
+    + Elasticsearch logstash - kibana 
+    + Elasticsearch - Mongodb - document store 
+    + Import relational database with spring batch 
+    + Spring data elasticsearch 
+    + import index from elasticsearch to kibana 
+    + Elasticsearch and Kibana instance 
     
     
     
