@@ -3,6 +3,7 @@ package com.project.batch.writer.transaction;
 
 import org.springframework.batch.item.file.ResourceSuffixCreator;
 
+
 public class StatementSuffixGenerator implements ResourceSuffixCreator {
 
     public String getSuffix(int arg0) {
@@ -10,4 +11,6 @@ public class StatementSuffixGenerator implements ResourceSuffixCreator {
     }
 
 }
-// No khong muon yeu duongdau
+
+
+
