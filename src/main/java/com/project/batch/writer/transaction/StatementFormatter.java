@@ -3,11 +3,10 @@ package com.project.batch.writer.transaction;
 
 import java.text.NumberFormat;
 
+import com.project.batch.entity.Customer;
+import com.project.batch.entity.Statement;
 import org.springframework.batch.item.file.transform.LineAggregator;
 
-import com.apress.springbatch.statement.domain.Customer;
-import com.apress.springbatch.statement.domain.Statement;
-import com.apress.springbatch.statement.domain.Transaction;
 
 public class StatementFormatter implements LineAggregator<Statement> {
 
@@ -25,6 +24,8 @@ public class StatementFormatter implements LineAggregator<Statement> {
     private static NumberFormat moneyFormatter = NumberFormat
             .getCurrencyInstance();
 
+
+    // Aggregrate - statement
     public String aggregate(Statement statement) {
         StringBuilder output = new StringBuilder();
 
@@ -61,7 +62,10 @@ public class StatementFormatter implements LineAggregator<Statement> {
                                 + statement.getSecurityTotal().doubleValue()) }));
     }
 
+
+    // Format Address
     private void formatAddress(Statement statement, StringBuilder output) {
+        // Ng
         Customer customer = statement.getCustomer();
 
         output.append(String.format(ADDRESS_FORMAT,

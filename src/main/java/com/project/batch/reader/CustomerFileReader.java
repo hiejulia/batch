@@ -1,6 +1,7 @@
 package com.project.batch.reader;
 import java.util.ArrayList;
 
+import com.project.batch.entity.Customer;
 import org.springframework.batch.item.ExecutionContext;
 import org.springframework.batch.item.ItemStreamException;
 import org.springframework.batch.item.ParseException;
@@ -8,16 +9,17 @@ import org.springframework.batch.item.UnexpectedInputException;
 import org.springframework.batch.item.file.ResourceAwareItemReaderItemStream;
 import org.springframework.core.io.Resource;
 
-import com.apress.springbatch.statement.domain.Customer;
-import com.apress.springbatch.statement.domain.Transaction;
 
+// File Reader class
 public class CustomerFileReader implements
         ResourceAwareItemReaderItemStream<Object> {
-
+    // Customer File Reader
     private Object curItem = null;
 
     private ResourceAwareItemReaderItemStream<Object> delegate;
 
+
+    // Read function
     public Object read() throws Exception {
         if (curItem == null) {
             curItem = (Customer) delegate.read();

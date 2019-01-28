@@ -4,8 +4,8 @@ package com.project.batch.reader;
 import java.net.URI;
 import java.util.List;
 
-import org.apache.commons.io.IOUtils;
-import org.apache.commons.lang.StringUtils;
+import com.project.batch.dao.TickerDao;
+import io.micrometer.core.instrument.util.IOUtils;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
@@ -16,8 +16,8 @@ import org.springframework.batch.item.ItemStreamException;
 import org.springframework.batch.item.ItemStreamReader;
 import org.springframework.batch.item.ParseException;
 import org.springframework.batch.item.UnexpectedInputException;
+import org.springframework.util.StringUtils;
 
-import com.apress.springbatch.statement.dao.TickerDao;
 
 public class UrlReader implements ItemStreamReader<String> {
 

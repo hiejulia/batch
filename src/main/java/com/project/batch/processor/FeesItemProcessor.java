@@ -3,13 +3,16 @@ package com.project.batch.processor;
 
 import java.math.BigDecimal;
 
+import com.project.batch.entity.AccountTransaction;
+import com.project.batch.entity.PricingTier;
 import org.springframework.batch.item.ItemProcessor;
 
-import com.apress.springbatch.statement.domain.AccountTransaction;
-import com.apress.springbatch.statement.domain.PricingTier;
+
 
 public class FeesItemProcessor implements
         ItemProcessor<AccountTransaction, AccountTransaction> {
+
+    // Process
 
     public AccountTransaction process(AccountTransaction transaction)
             throws Exception {
@@ -25,6 +28,8 @@ public class FeesItemProcessor implements
 
         return transaction;
     }
+
+
 
     private void priceTierFourTransaction(AccountTransaction transaction) {
         transaction.setFee(new BigDecimal(1.00));

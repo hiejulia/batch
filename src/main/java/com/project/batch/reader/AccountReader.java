@@ -1,19 +1,27 @@
 package com.project.batch.reader;
 
+import com.project.batch.entity.Account;
+import com.project.batch.service.transaction.AccountService;
 import org.springframework.batch.item.ExecutionContext;
 import org.springframework.batch.item.ItemStreamException;
 import org.springframework.batch.item.ItemStreamReader;
 import org.springframework.batch.item.ParseException;
 import org.springframework.batch.item.UnexpectedInputException;
 import org.springframework.batch.item.support.ListItemReader;
+import org.springframework.beans.factory.annotation.Autowired;
 
-import com.apress.springbatch.statement.domain.Account;
-import com.apress.springbatch.statement.service.AccountService;
 
 public class AccountReader implements ItemStreamReader<Account> {
 
     private ListItemReader<Account> accountReader;
+
+
+    @Autowired
     private AccountService accountService;
+    // ListItemReader- Account
+
+    //
+
 
     public void setAccountService(AccountService accountService) {
         this.accountService = accountService;
