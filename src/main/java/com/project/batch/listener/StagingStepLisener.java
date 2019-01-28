@@ -5,7 +5,7 @@ import org.springframework.batch.core.annotation.BeforeStep;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 
-public class StagingStepListener extends JdbcTemplate implements StepListener {
+public class StagingStepLisener extends JdbcTemplate implements StepListener {
 
     private String SQL = " set jobId = ?, processed = false ";
     private String tableName;

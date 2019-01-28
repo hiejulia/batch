@@ -3,12 +3,16 @@ package com.project.batch.listener;
 
 import java.util.List;
 
+import com.project.batch.entity.AccountTransaction;
 import org.springframework.batch.core.ItemWriteListener;
 import org.springframework.jdbc.core.JdbcTemplate;
 
-import com.apress.springbatch.statement.domain.AccountTransaction;
 
-public class StagingChunkUpdater extends JdbcTemplate implements ItemWriteListener<AccountTransaction> {
+
+public class StagingChunkUpdate extends JdbcTemplate implements ItemWriteListener<AccountTransaction> {
+
+
+
 
     private String SQL = " set processed = true ";
     private String tableName;
