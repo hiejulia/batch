@@ -21,8 +21,29 @@ public class ESconfig {
 	@Bean
 	public TransportClient client5() throws Exception {
 
+		// Settings settings = ImmutableSettings.settingsBuilder()
+        // .put("cluster.name", "elasticsearch_hien")
+        // .put("client.transport.ignore_cluster_name", false)
+        // .put("node.client", true)
+        // .put("client.transport.sniff", true)
+        // .build();
+
+
+
+
 		TransportClient client = new PreBuiltTransportClient(Settings.EMPTY)
 				.addTransportAddress(new TransportAddress(InetAddress.getByName("localhost"), 9300));
+
+
+		// TransportClient client = new TransportClient(settings).addTransportAddress(new  InetSocketTransportAddress("localhost", 9300)); 
+
+				// Set cluster name 
+
+
+				
+
+
+
 		return client;
 
 	}

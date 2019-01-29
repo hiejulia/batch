@@ -47,15 +47,15 @@ Batch data
 + Feature 3 : 
     + CSV file processing sent to Apache Kafka producer for further processing  
     
-+ Feature 4 : (ELK folder)
++ Feature 4 : (folder : elk)
     + Transfer large data from rational database to NoSQL(Elasticsearch) for index search 
     + Elasticsearch logstash - kibana 
-    + Elasticsearch - Mongodb - document store 
     + Import relational database with spring batch 
     + Spring data elasticsearch 
     + import index from elasticsearch to kibana 
     + Elasticsearch and Kibana instance 
-    + 
+    + Description : Import data fron MySQL table to ElasticSearch database with Spring Batch and Spring ElasticSearch data 
+    
     
     
     
