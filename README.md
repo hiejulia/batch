@@ -55,9 +55,31 @@ Batch data
     + import index from elasticsearch to kibana 
     + Elasticsearch and Kibana instance 
     + Description : Import data fron MySQL table to ElasticSearch database with Spring Batch and Spring ElasticSearch data 
+
+    + TODO : 
+        + Fix bug running in Elasticsearch 
+        + Check ElasticSearch database 
     
-    
-    
+
+
++ Feature 5 : 
+    + Apache Kafka - Apache Zookeeper 
+    + Read CSV file and process them into a topic with Kafka producer 
+    + Set up Apache Kafka   
+    + # Start Zookeeper instance 
+        `$ zookeeper-server-start.bat ..\..\config\zookeeper.properties`
+  
+  # Start Kafka server
+  `$ kafka-server-start.bat ..\..\config\server.properties`
+  
+  # Create a topic
+  `kafka-topics --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic CSV_TOPIC_K`
+
+    + Kafka stream 
+
+
+
+
     
 
 --------- 
