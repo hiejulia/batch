@@ -100,6 +100,8 @@ Setting up Apache Kafka
 port = 9092
 advertised.host.name = localhost 
 
+ 
+
 
 ## Cassandra 
 
@@ -108,5 +110,4 @@ advertised.host.name = localhost
 
 
 ----- 
-
 
