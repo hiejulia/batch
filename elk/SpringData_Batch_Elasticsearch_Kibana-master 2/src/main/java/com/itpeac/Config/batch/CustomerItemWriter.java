@@ -30,7 +30,9 @@ public class CustomerItemWriter implements ItemWriter<Customer> {
          System.out.println(">>"+items.get(i).getBirthdate().toString());*/
          
          // save all customer 
-		 this.elasticsearchCustomerRepository.saveAll(items);
+         this.elasticsearchCustomerRepository.saveAll(items);
+         
+         // log to the command line 
 		 
 	}
 
