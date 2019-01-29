@@ -55,6 +55,7 @@ Batch data
     + Spring data elasticsearch 
     + import index from elasticsearch to kibana 
     + Elasticsearch and Kibana instance 
+    + 
     
     
     

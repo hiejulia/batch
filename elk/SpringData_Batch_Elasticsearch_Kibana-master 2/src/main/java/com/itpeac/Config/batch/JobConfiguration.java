@@ -33,16 +33,22 @@ public class JobConfiguration {
 	@Autowired
 	public DataSource dataSource;
 
+
+	// No bat dau no nghi ngo - ai cung phai lam viec ca 
+
+
 	@Bean
 	public JdbcPagingItemReader<Customer> pagingItemReader() {
 		JdbcPagingItemReader<Customer> reader = new JdbcPagingItemReader<>();
 
 		reader.setDataSource(this.dataSource);
-		reader.setFetchSize(10);
+
+		
+		reader.setFetchSize(1);
 		reader.setRowMapper(new CustomerRowMapper());
 
 		MySqlPagingQueryProvider queryProvider = new MySqlPagingQueryProvider();
-		queryProvider.setSelectClause("id, firstName, lastName, birthdate");
+		queryProvider.setSelectClause("id, firstName, lastName");
 		queryProvider.setFromClause("from customer");
 
 		Map<String, Order> sortKeys = new HashMap<>(1);
@@ -54,16 +60,27 @@ public class JobConfiguration {
 		reader.setQueryProvider(queryProvider);
 
 		return reader;
+
+		// tre trau - bo tay 
+
+		// no o rastila - no con bo thang day day - 
 	}
 
+
+
+	// Step to run 
+		// 
 	@Bean
 	public Step importCustomereStep(StepBuilderFactory stepBuilderFactory, ItemWriter<Customer> CustomerItemWriter) {
 		return stepBuilderFactory.get("importCustomereStep").<Customer, Customer>chunk(100).reader(pagingItemReader())
 				.writer(CustomerItemWriter).build();
 	}
 
+	// Con nho nay - ngay nao cung nhai dream theater 
+
 	@Bean
 	public Job job(JobBuilderFactory jobBuilderFactory, Step importCustomereStep) {
 		return jobBuilderFactory.get("job").incrementer(new RunIdIncrementer()).start(importCustomereStep).build();
 	}
 }
+

@@ -20,11 +20,16 @@ public class CustomerItemWriter implements ItemWriter<Customer> {
     }
  
 
+
+
+    // Write 
 	@Override
 	public void write(List<? extends Customer> items) throws Exception {
 		
 /*		for(int i=0;i<items.size();i++)
-		 System.out.println(">>"+items.get(i).getBirthdate().toString());*/
+         System.out.println(">>"+items.get(i).getBirthdate().toString());*/
+         
+         // save all customer 
 		 this.elasticsearchCustomerRepository.saveAll(items);
 		 
 	}

@@ -5,7 +5,7 @@ import org.springframework.data.elasticsearch.repository.ElasticsearchCrudReposi
 import com.itpeac.domain.Customer;
 
 
-
+// Save customer to ElasticSearch
 public interface ElasticsearchCustomerRepository extends ElasticsearchCrudRepository<Customer, Integer> {
 
 }

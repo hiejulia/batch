@@ -14,3 +14,4 @@ public class DatabaseInputApplication2 {
         SpringApplication.run(DatabaseInputApplication2.class, args);
     }
 }
+

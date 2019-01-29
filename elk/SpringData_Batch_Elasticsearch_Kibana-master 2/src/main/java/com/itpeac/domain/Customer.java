@@ -8,6 +8,8 @@ import org.springframework.data.elasticsearch.annotations.Document;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
+
+// Extract table from MySQL to Elasticsearch
 @Document(indexName = "customers", type = "customer")
 public class Customer {
 
@@ -17,23 +19,22 @@ public class Customer {
 	private String firstName;
 
 	private String lastName;
-	
-	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss")
-	private Date birthdate;
 
-	public Customer(int id, String firstName, String lastName, Date birthdate) {
+	
+	// @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss")
+	// private Date birthdate; 
+
+	
+
+	public Customer(int id, String firstName, String lastName) {
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
-		this.birthdate = birthdate;
+		
 
 	}
 
-	@Override
-	public String toString() {
-		return "Customer [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", birthdate=" + birthdate
-				+ "]";
-	}
+	
 
 	public int getId() {
 		return id;
@@ -47,9 +48,5 @@ public class Customer {
 		return lastName;
 	}
 
-	public Date getBirthdate() {
-
-		return birthdate;
-	}
 
 }

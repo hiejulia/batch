@@ -13,21 +13,28 @@ import org.springframework.data.elasticsearch.core.ElasticsearchTemplate;
 import org.springframework.data.elasticsearch.repository.config.EnableElasticsearchRepositories;
 
 @Configuration
-@EnableElasticsearchRepositories(basePackages = "RepositoryEs")
+@EnableElasticsearchRepositories(basePackages = "RepositoryEs") // enable 
 public class ESconfig {
+
+	// ESConfig 
 
 	@Bean
 	public TransportClient client5() throws Exception {
 
 		TransportClient client = new PreBuiltTransportClient(Settings.EMPTY)
-		        .addTransportAddress(new TransportAddress(InetAddress.getByName("localhost"), 9300));
+				.addTransportAddress(new TransportAddress(InetAddress.getByName("localhost"), 9200));
 		return client;
 
 	}
 
 	@Bean
 	public ElasticsearchOperations elasticsearchTemplate2() throws Exception {
-		return new ElasticsearchTemplate(client5());
+		return new ElasticsearchTemplate(client5()); // elasticsearchTemplate - 
+
+		// no nhai cai bai nay ca ngay roi day 
+
+		// dan nghe rock - 
+
 	}
 
 }
