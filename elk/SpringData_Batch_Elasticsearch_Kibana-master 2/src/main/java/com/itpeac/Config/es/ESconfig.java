@@ -31,12 +31,7 @@ public class ESconfig {
 	public ElasticsearchOperations elasticsearchTemplate2() throws Exception {
 		return new ElasticsearchTemplate(client5()); // elasticsearchTemplate - 
 
-		// no nhai cai bai nay ca ngay roi day 
-
-		// dan nghe rock - 
-
-		// Dan nghe rock 
-
 	}
+	
 
 }
