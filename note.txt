@@ -1,0 +1,1 @@
+https://github.com/altfatterz/spring-batch-with-jms
