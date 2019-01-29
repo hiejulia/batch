@@ -48,7 +48,7 @@ public class JobConfiguration {
 		reader.setRowMapper(new CustomerRowMapper());
 
 		MySqlPagingQueryProvider queryProvider = new MySqlPagingQueryProvider();
-		queryProvider.setSelectClause("id, firstName, lastName");
+		queryProvider.setSelectClause("id, firstname, lastname");
 		queryProvider.setFromClause("from customer");
 
 		Map<String, Order> sortKeys = new HashMap<>(1);

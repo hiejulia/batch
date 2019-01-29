@@ -16,9 +16,9 @@ public class Customer {
 	@Id
 	private int id;
 
-	private String firstName;
+	private String firstname;
 
-	private String lastName;
+	private String lastname;
 
 	
 	// @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss")
@@ -26,10 +26,10 @@ public class Customer {
 
 	
 
-	public Customer(int id, String firstName, String lastName) {
+	public Customer(int id, String firstname, String lastname) {
 		this.id = id;
-		this.firstName = firstName;
-		this.lastName = lastName;
+		this.firstname = firstname;
+		this.lastname = lastname;
 		
 
 	}
@@ -40,13 +40,14 @@ public class Customer {
 		return id;
 	}
 
-	public String getFirstName() {
-		return firstName;
+	public String getFistname() {
+		return firstname;
 	}
 
-	public String getLastName() {
-		return lastName;
+	public String getLastname() {
+		return lastname;
 	}
 
 
 }
+
