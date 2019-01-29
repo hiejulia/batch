@@ -22,7 +22,7 @@ public class ESconfig {
 	public TransportClient client5() throws Exception {
 
 		TransportClient client = new PreBuiltTransportClient(Settings.EMPTY)
-				.addTransportAddress(new TransportAddress(InetAddress.getByName("localhost"), 9200));
+				.addTransportAddress(new TransportAddress(InetAddress.getByName("localhost"), 9300));
 		return client;
 
 	}
@@ -34,6 +34,8 @@ public class ESconfig {
 		// no nhai cai bai nay ca ngay roi day 
 
 		// dan nghe rock - 
+
+		// Dan nghe rock 
 
 	}
 
