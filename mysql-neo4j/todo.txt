@@ -1,0 +1,7 @@
++ Send data from mysql -> kafka : kafka connect
+    + DDL script MySQL
+    +
+
+
+
++
