@@ -4,11 +4,11 @@ package com.project.migration.model;
 import lombok.Data;
 import org.neo4j.ogm.annotation.GeneratedValue;
 import org.neo4j.ogm.annotation.Id;
-import org.neo4j.ogm.annotation.NodeEntity;
 
 @Data
-@NodeEntity
-public class Video {
+public class VideoMySQL {
+
+
 
     @Id
     @GeneratedValue
@@ -22,11 +22,7 @@ public class Video {
 
     private String title;
 
-
-
-    // Neo4J : id, name, bitrateKbps, remotePath
-    // remote : title
-
+    // id, fileName, bitrateKbps, remotePath, title
 
 
 }

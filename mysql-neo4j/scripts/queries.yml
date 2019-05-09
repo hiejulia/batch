@@ -1,0 +1,4 @@
+user: SELECT u.uid, u.is_active, UNIX_TIMESTAMP(u.creation_date) creation_date, UNIX_TIMESTAMP(u.update_date) update_date, u.city, u.company, u.email, u.first, u.last, u.image_url, u.password_hash, u.status, u.street, u.creator_uid, u.language_tag, u.time_zone, l.login_attempts, l.reset_attempts, l.reset_password_token FROM user u LEFT JOIN user_login_details l ON u.uid = l.user_id;
+role: SELECT rid, is_active, is_locked, UNIX_TIMESTAMP(creation_date) creation_date, UNIX_TIMESTAMP(update_date) update_date, name FROM role;
+
+
