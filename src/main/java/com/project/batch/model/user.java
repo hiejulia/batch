@@ -31,10 +31,5 @@ public class user {
     private Date date;
 
 
-    // User :
-
-        // id, name, department, salary, date
-
-
 }
 
