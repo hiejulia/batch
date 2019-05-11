@@ -2,21 +2,25 @@
 Batch data 
 
 
+## Project description 
++ Data migration 
++ Data transfer from one database to other database with 
+
+
+
+
+
 ## Stack 
 + Spring batch 
-+ MySQL 
 + Scheduling 
-+ Database : Cassandra - PostgreSQL - MySQL
-    + Cassandra  
-
++ Database : Cassandra - PostgreSQL - MySQL  
 + ElasticSearch instance 
 + Kibana 
 + Apache Kafka : stream processing 
 + Apache zookeeper - for Apache kafka processing 
 
-
-
-## Feature 
+## Feature
++ Feature 1  
 + Read - Process - Write data in batches 
     + Cassandra 
         + 2 jobs 
@@ -59,55 +63,26 @@ Batch data
     + TODO : 
         + Fix bug running in Elasticsearch 
         + Check ElasticSearch database 
-    
-
 
 + Feature 5 : 
     + Apache Kafka - Apache Zookeeper 
     + Read CSV file and process them into a topic with Kafka producer 
     + Set up Apache Kafka   
-    + # Start Zookeeper instance 
-        `$ zookeeper-server-start.bat ..\..\config\zookeeper.properties`
-  
-  # Start Kafka server
-  `$ kafka-server-start.bat ..\..\config\server.properties`
-  
-  # Create a topic
-  `kafka-topics --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic CSV_TOPIC_K`
-
-    + Kafka stream 
-
-
-
-
     
-
---------- 
-
-
-
-Setting up Apache Kafka
-  # Start Zookeeper instance 
-  $ zookeeper-server-start.bat ..\..\config\zookeeper.properties
   
-  # Start Kafka server
-  $ kafka-server-start.bat ..\..\config\server.properties
   
-  # Create a topic
-  $ kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic CSV_TOPIC_K
   
 
-port = 9092
-advertised.host.name = localhost 
 
- 
-
-
-## Cassandra 
-
-+ Install Cassandra 
-+ Start cassandra  
-
-
------ 
-
+## How to run 
++ Install 
+    + Zookeeper, Kafka
+    + Start Zookeeper instance 
+        `$ zookeeper-server-start.bat ..\..\config\zookeeper.properties`
+    + Start Kafka server
+        `$ kafka-server-start.bat ..\..\config\server.properties`
+    + Create a topic
+        `kafka-topics --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic CSV_TOPIC_K`
+    + Kafka stream 
+    + port = 9092
+     
