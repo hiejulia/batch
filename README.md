@@ -1,7 +1,9 @@
 # batch
+I am back to maintain this project . Give me some star to support me. Or this is my bank account :)(updating...)
 Batch data 
-
 Data migration and data processing 
+Batch processing streaming 
+Batch processing run in NVIDIA GPU environment 
 
 
 ## Stack 
